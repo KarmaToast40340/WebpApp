@@ -70,4 +70,4 @@ WebpApp is a lightweight and efficient application that allows users to convert 
 ---
 
 #### **Support**
-For support, bug reports, or feature requests, contact us at **support@webpapp.com**.
+For support, bug reports, or feature requests, do not hesitate to create a pull request.
