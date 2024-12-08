@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+; Supprimer les entrées du menu contextuel pour .webp
+[-HKEY_CLASSES_ROOT\.webp\shell\ConvertToPng]
+[-HKEY_CLASSES_ROOT\.webp\shell\ConvertToPng\command]
+
+; Supprimer les entrées globales pour la commande ConvertToPng
+[-HKEY_CLASSES_ROOT\*\shell\ConvertToPng]
+[-HKEY_CLASSES_ROOT\*\shell\ConvertToPng\command]
+
+; Supprimer les entrées pour les objets du système de fichiers
+[-HKEY_CLASSES_ROOT\AllFileSystemObjects\shell\ConvertToPng]
+[-HKEY_CLASSES_ROOT\AllFileSystemObjects\shell\ConvertToPng\command]
+
+; Supprimer les entrées pour les répertoires
+[-HKEY_CLASSES_ROOT\Directory\shell\ConvertToPng]
+[-HKEY_CLASSES_ROOT\Directory\shell\ConvertToPng\command]
+
+; Supprimer l'entrée spécifique pour ContextMenuHandlers
+[-HKEY_CLASSES_ROOT\AllFileSystemObjects\shellex\ContextMenuHandlers\ConvertToPng]
+
+; Supprimer la variable d'environnement WEBPAPP_HOME
+[-HKEY_CURRENT_USER\Environment\WEBPAPP_HOME]
